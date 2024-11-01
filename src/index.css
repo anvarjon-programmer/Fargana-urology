@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Mulish', Calibri;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::selection {
+    background: #458FF6;
+    color: #fff;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #458FF6;
+}
+
+.swiper {
+    cursor: grab;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50%;
+    border: 2px solid #aacdfd;
+    right: 10px;
+    margin: -10px;
+    color: #458FF6;
+    fill: #458FF6 !important;
+    stroke: #458FF6 !important;
+    transition: .4s all;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #458FF6;
+    color: #fff !important;
+    border: 2px solid #458FF6;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px !important;
+}
+
+.shadow-normal {
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
